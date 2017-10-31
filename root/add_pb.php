@@ -1,4 +1,5 @@
 <?php 
+// hehe
 session_start();
 if (!isset($_SESSION['pb'])) {
   header('location:../home');
