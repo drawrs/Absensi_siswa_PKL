@@ -1,4 +1,5 @@
 <?php
+// jiwa
 include '../lib/db/dbconfig.php';
 $sql = "SELECT*FROM data_absen NATURAL LEFT JOIN bulan NATURAL JOIN hari NATURAL JOIN tanggal NATURAL JOIN detail_user WHERE st_jam_msk='Menunggu' OR st_jam_klr='Menunggu'";
 $query = $conn->query($sql);
